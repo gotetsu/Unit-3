@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Merriweather', serif;
+margin: 0;
+
+
+}
+
+.header {
+
+    color: white;
+    background-color: rgb(59, 78, 102);
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+    font-size: x-large;
+}
+.header2 {
+color: rgb(48, 68, 87);;
+text-align:center
+
+}
+h2 {
+color:rgb(59, 78, 102);
+
+}
+.headerP {
+    color: rgb(59, 78, 102);
+    text-align: center;
+}
+
+hr {
+    
+    border-style: groove;
+    border-width: 4px;
+}
+.newsp {
+    color: rgb(59, 78, 102);
+
+}
+
+/* Selectors */
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+
+  input, textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+    display: block;
+    margin: auto;
+   padding: 5%;
+    color: #FFF;
+    background-color: #4bc1c9;
+    font-size: 30px;
+    text-align: center;
+    border-style: none;
+   margin-top: 30px;
+    width: 90%;
+  }
