@@ -2,6 +2,7 @@
 body {
     font-family: 'Merriweather', serif;
 margin: 0 auto;
+box-sizing: border-box;
 
 }
 
@@ -51,40 +52,73 @@ form {
     background-color: white;
   }
 
-  input, textarea,
-select {
+
+
+input, select {
 
   background: rgba(255,255,255,0.1);
   border: none;
-  font-size: 16px;
+  font-size: 13px;
   height: auto;
   margin: 10px;
   outline: 0px;
   padding: 20px;
-  width: 100%;
+ width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
+#zipcode {
+
+    width: 35%;
+}
+textarea  {
+
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 5px;
+    padding: 40px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 10px;
+  }
 label {
 color: rgb(172, 181, 192);
 margin: 10px;
-
 }
 
+label .cajas {
+  font-weight: 300;
+  display: inline;
+}
+
+input [checkbox] {
+
+    background-color: red;
+    border-style: groove;
+}
+  
+/* Radio and focus */
 
 
+.radio [type]{
+    width: 10%;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+input:focus {
+border-color: #52;
 
 
-
-
-
-
-
-
-
-
+}
 
 
 button {
@@ -92,10 +126,11 @@ button {
     margin: auto;
    padding: 5%;
     color: #FFF;
-    background-color: #4bc1c9;
-    font-size: 30px;
+    background-color: #66c8cf;
+    font-size: 18px;
     text-align: center;
     border-style: none;
    margin-top: 30px;
-    width: 90%;
+    width: 100%;
+    border-radius: 2%;
   }

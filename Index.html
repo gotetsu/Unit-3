@@ -11,97 +11,65 @@
 </head>
 
 <body>
-<header>
-  <h1 class="header">the code review</h1>
-  <h2 class="header2"> Signup for our newsletter</h2>
-<p class="headerP">Get the lastest news on how your code is doing right in your inbox</p>
-<hr>
-</header>
-<form action="index.html" method="post">
-<h2>Contact Information</h2>
-<label for="name">Full Name</label>
-<input type="text" id="name" name="user_name">
-<label for="mail">Email Address</label>
-<input type="email" id="mail" name="user_email">
-<label for="phone">Phone Number</label>
-<input type="phone" id="phone" name="user_phone">
-<label for="address">Street Address</label>
-<input type="address" id="address" name="user_address ">
-<label for="city">City</label>
-<input type="city" id="city" name="user_city">
-<label for="state">State</label>
-<select id="state" name="user_state">
-<option value="state">Choose State</option>
-<option value="auckland>">Auckland</option>
-<option value="wellingtong>">Wellingtong</option>
-<option value="hamilton>">Hamilton</option>
-<option value="dunedin>">Dunedin</option>
-<option value="queenstown>">Queenstown</option>
-<option value="whangarei>">Whangarei</option>
-<option value="tauranga>">Tauranga</option>
-</select>
-<label for="zipcode">Zip Code</label>
-<input type="zipcode" id="zipcode" name="user_zipcode">
+  
+  <header>
+    <h1 class="header">the code review</h1>
+    <h2 class="header2"> Signup for our newsletter</h2>
+    <p class="headerP">Get the lastest news on how your code is doing right in your inbox</p>
+    
+  </header>
+  <form action="index.html" method="post">
+    <hr>
+    <h2>Contact Information</h2>
+    
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="user_name">
+    <label for="mail">Email Address</label>
+    <input type="email" id="mail" name="user_email">
+    <label for="phone">Phone Number</label>
+    <input type="phone" id="phone" name="user_phone">
+    <label for="address">Street Address</label>
+    <input type="address" id="address" name="user_address ">
+    <label for="city">City</label>
+    <input type="city" id="city" name="user_city">
+    <label for="state">State</label>
+    <select id="state" name="user_state">
+      <option value="state">Choose State</option>
+      <option value="auckland>">Auckland</option>
+      <option value="wellingtong>">Wellingtong</option>
+      <option value="hamilton>">Hamilton</option>
+      <option value="dunedin>">Dunedin</option>
+      <option value="queenstown>">Queenstown</option>
+      <option value="whangarei>">Whangarei</option>
+      <option value="tauranga>">Tauranga</option>
+    </select>
+    <label for="zipcode">Zip Code</label>
+    <input type="zipcode" id="zipcode" name="user_zipcode">
+  
+    <hr>
+    <h2>Newsletter</h2>
 
-<hr>
-<h2>Newsletter</h2>
+    <p>Select the newsletters you would like to receive</p>
+  <div class="radio">
+    <input type="checkbox" id="HTMLNews" name="user_opt1"><label  for="HTMLNews">HTML News</label> <br>
+    <input type="checkbox"  id="cssnews" name="user_opt2">    <label for="cssnews">CSS News</label> <br>
+    <input type="checkbox"  id="javascripnews" name="user_opt3"> <label  for="javascripnews">Javascrip News</label><br> 
+    <p> Newsletter Format </p>
+  
+    <input type="radio" class="loco" id="html" value="newsletter" name="user_format">  <label> HTML</label> <br>
 
-<p>Select the newsletters you would like to receive</p>
-<label>HTML News</label>
-<input type="radio" id="HTMLNews" value="newsletter" name="user_opt1">
-<label>CSS News</label>
-<input type="radio" id="cssnews" value="cssnews" name="user_opt2">
-<label>Javascrip News</label>
-<input type="radio" id="javascripnews" value="javascripnews" name="user_opt3"> 
-  <p> Newsletter Format </p>
-  <label> HTML</label>
-  <input type="radio" id="html" value="newsletter" name="user_format"> 
-  <label>Plain text</label>
-  <input type="radio" id="html" value="newsletter" name="user_format"> 
+    <input type="radio" class="loco" id="html" value="newsletter" name="user_format">    <label>Plain text</label> <br>
+ 
+    </div>
 
-
-
-
-
-
-
-
-
+<p class="headerP">Other topics you'd like to hear about</p>
+    <textarea id="bio" name="user_bio"></textarea>
+    <button type="submit"> Sign Up</button>
 
 
+  </form>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<textarea id="bio" name="user_bio"></textarea>
-<button type="submit"> Sign Up</button>
-
-
-</form>
-
-</form>
+  </form>
 </body>
 
 </html>
