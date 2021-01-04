@@ -1,7 +1,7 @@
 * {
-
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Merriweather', serif;
     margin: auto;
@@ -92,10 +92,6 @@ label {
     margin: 10px;
 }
 
-
-
-
-
 /* Radio and focus */
 
 .radio [type] {
@@ -139,7 +135,7 @@ button {
 
 .foot {
     text-align: center;
-    margin-top: 0 auto;
+    margin-top: 100px;
     color: #8a97a0;
     font-style: italic;
 }
@@ -161,38 +157,23 @@ button {
 
 @media screen and (min-width: 768px) {
     form {
-        
         min-width: 60%;
-        
     }
     .flex {
         display: flex;
-        
-        
     }
-
     #name {
         margin-left: 40px
-    
     }
-
     #city {
-
         margin-left: 90px;
     }
-
     #state {
-
         margin-left: 80px;
-      
-
     }
-
     #zipcode {
-
         margin-left: 50px;
     }
- 
     .header2 {
         margin-top: 35px;
     }
@@ -210,20 +191,14 @@ button {
         padding: 20px;
         margin: 30px;
         margin-left: 0;
-       
-        
     }
     .headerP1 {
-        
         margin-top: 40px;
     }
     textarea {
         display: flex;
-
-      margin-top: 1px;
-      margin: 0;
-  
-
+        margin-top: 1px;
+        margin: 0;
     }
     button:active {
         background-color: rgb(184, 160, 26);
