@@ -1,9 +1,10 @@
+* {
+
+    box-sizing: border-box;
+}
 body {
     font-family: 'Merriweather', serif;
-    margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    margin: auto;
     min-height: 100vh;
 }
 
@@ -66,7 +67,7 @@ input, select {
     margin: 10px;
     outline: 0px;
     padding: 20px;
-    width: 88%;
+    width: 100%;
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
@@ -74,11 +75,11 @@ input, select {
 }
 
 textarea {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(197, 48, 110, 0.1);
     border: none;
     font-size: 16px;
     height: auto;
-    margin: 0;
+    margin: 30px;
     padding: 35px;
     background-color: #e8eeef;
     color: #8a97a0;
@@ -91,15 +92,9 @@ label {
     margin: 10px;
 }
 
-label .cajas {
-    font-weight: 300;
-    display: inline;
-}
 
-input [checkbox] {
-    background-color: red;
-    border-style: groove;
-}
+
+
 
 /* Radio and focus */
 
@@ -112,9 +107,10 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input:focus {
-    outline: 1px solid rgb(14, 225, 240);
-    color: rgb(3, 27, 29);
+    outline: 1px solid rgb(34, 220, 226);
+    color: rgb(19, 166, 235);
     border-radius: 5px;
+    border-color: lightgreen;
 }
 
 .hrtop {
@@ -129,7 +125,7 @@ input:focus {
 button {
     display: block;
     margin: auto;
-    padding: 5%;
+    padding: 3%;
     color: #FFF;
     background-color: #66c8cf;
     font-size: 18px;
@@ -154,7 +150,7 @@ button {
 
 button {
     max-width: 100%;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 40px;
 }
 
@@ -165,17 +161,38 @@ button {
 
 @media screen and (min-width: 768px) {
     form {
+        
         min-width: 60%;
+        
     }
     .flex {
         display: flex;
+        
+        
     }
-    input {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 100px;
-        border-style: groove;
+
+    #name {
+        margin-left: 40px
+    
     }
+
+    #city {
+
+        margin-left: 90px;
+    }
+
+    #state {
+
+        margin-left: 80px;
+      
+
+    }
+
+    #zipcode {
+
+        margin-left: 50px;
+    }
+ 
     .header2 {
         margin-top: 35px;
     }
@@ -189,8 +206,24 @@ button {
         max-width: 85%;
     }
     button {
-        max-width: 100%;
-        padding: 20px
+        max-width: 80%;
+        padding: 20px;
+        margin: 30px;
+        margin-left: 0;
+       
+        
+    }
+    .headerP1 {
+        
+        margin-top: 40px;
+    }
+    textarea {
+        display: flex;
+
+      margin-top: 1px;
+      margin: 0;
+  
+
     }
     button:active {
         background-color: rgb(184, 160, 26);
