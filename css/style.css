@@ -8,7 +8,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  
 }
 
 .header {
@@ -79,7 +78,6 @@ input, select {
 
 #bio {
     width: 95%;
-    
     border-color: brown;
     padding: 65px;
 }
@@ -107,17 +105,16 @@ input[type="radio"], input[type="checkbox"] {
     margin: 0 4px 8px 0;
 }
 
-
-
 input:focus {
     color: lawngreen;
     background-color: rgb(6, 9, 65);
     border-color: lawngreen;
-    border-style:outset
-  }
-  .flex:focus {
-      border-color: lawngreen;
-  }
+    border-style: outset
+}
+
+.flex:focus {
+    border-color: lawngreen;
+}
 
 .hrtop {
     margin-right: auto;
