@@ -4,10 +4,10 @@
 
 body {
     font-family: 'Merriweather', serif;
-    margin: auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0 0;
 }
 
 .header {
@@ -15,8 +15,8 @@ body {
     background-color: rgb(59, 78, 102);
     text-align: center;
     text-transform: uppercase;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0;
+    margin-left: 0;
     padding: 30px;
     font-size: large;
 }
@@ -36,10 +36,14 @@ h2 {
     text-align: center;
 }
 
-hr {
-    border-style: groove;
-    border-width: 4px;
-    width: 100%;
+.hrtop {
+    border-top: solid 5px rgb(175, 173, 173);
+    border-bottom: solid 3px;
+}
+
+p {
+    border-style: none;
+    border: none;
 }
 
 .newsp {
@@ -52,16 +56,24 @@ hr {
     font-style: italic;
 }
 
+textarea::placeholder {
+    position: static;
+    text-align: center;
+    position: relative;
+    color: rgb(218, 118, 118);
+}
+
 /* Selectors */
 
 form {
-    max-width: 65%;
     margin: auto;
     background: #f4f7f8;
     background-color: white;
 }
 
 input, select {
+    display: inline-flex;
+    width: 100%;
     background: rgba(255, 255, 255, 0.1);
     border: none;
     font-size: 13px;
@@ -69,7 +81,6 @@ input, select {
     margin: 10px;
     outline: 0px;
     padding: 20px;
-    width: 100%;
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
@@ -82,17 +93,13 @@ input, select {
     padding: 65px;
 }
 
-textarea {
-    border: none;
-    font-size: 16px;
-    height: auto;
-    background-color: #151614;
-    color: #3bcef3;
-}
-
 label {
     color: rgb(172, 181, 192);
     margin: 10px;
+}
+
+fieldset {
+    border: hidden;
 }
 
 /* Radio and focus */
@@ -109,15 +116,12 @@ input:focus {
     color: lawngreen;
     background-color: rgb(6, 9, 65);
     border-color: lawngreen;
-    border-style: outset
+    border-style: outset;
+    transition: .8s;
 }
 
 .flex:focus {
     border-color: lawngreen;
-}
-
-.hrtop {
-    margin-right: auto;
 }
 
 .hrbottom {
@@ -136,14 +140,15 @@ button {
     border-style: none;
     margin-top: 30px;
     margin-bottom: 15px;
-    width: 100%;
     border-radius: 2%;
 }
 
 .foot {
-    text-align: center;
-    margin-top: auto;
-    color: #f10fcc;
+    background-color: rgb(7, 4, 4);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: #daf10f;
     font-style: italic;
 }
 
@@ -153,20 +158,28 @@ button {
     color: rgb(107, 114, 121);
 }
 
+textarea {
+    font-size: 16px;
+    height: auto;
+    background-color: #151614;
+    color: #3bcef3;
+    max-width: 90%;
+}
+
 button {
-    max-width: 100%;
+    width: 90%;
     padding: 25px;
     margin-bottom: 40px;
 }
 
-#zipcode {
+#zip_code {
     display: block;
     max-width: 45%;
 }
 
 @media screen and (min-width: 768px) {
     form {
-        width: 60%;
+        width: 70%;
     }
     .flex {
         display: flex;
@@ -186,14 +199,11 @@ button {
     .header2 {
         margin-top: 35px;
     }
-    h2 {
+    .h2 {
         margin-top: 35px;
     }
-    #zipcode {
-        margin-left: 50px;
-    }
-    #bio {
-        max-width: 80%;
+    #zip_code {
+        margin-left: 65px;
     }
     button {
         max-width: 80%;
@@ -205,6 +215,7 @@ button {
         margin-top: 40px;
     }
     textarea {
+        max-width: 80%;
         display: flex;
         margin-top: 1px;
         margin: 0;
